@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class Practice3Component implements OnInit {
   showSecretContent = false;
   clickArray = [];
-  iteration = 1;
 
   constructor() { }
 
@@ -17,9 +16,7 @@ export class Practice3Component implements OnInit {
 
   performButtonAction() {
     this.showSecretContent = !this.showSecretContent;
-    this.clickArray.push(this.iteration);
-    this.iteration++;
-    console.log(this.clickArray);
+    this.clickArray.push(new Date());
   }
 
 }

@@ -5,8 +5,8 @@
 </button>
 <p *ngIf="showSecretContent">Super Secret Content</p>
 <div 
-  *ngFor="let entry of clickArray"
-  [ngStyle]="{backgroundColor: entry > 5 ? 'blue' : 'white'}"
-  [ngClass]="{test: entry > 5}"> 
+  *ngFor="let entry of clickArray; let i = index"
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'white'}"
+  [ngClass]="{test: i >= 4}"> 
   {{ entry }} 
 </div>
