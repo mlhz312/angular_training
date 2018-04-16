@@ -1,0 +1,12 @@
+<button 
+  class="btn btn-primary"
+  (click)="performButtonAction()">
+  Display Details
+</button>
+<p *ngIf="showSecretContent">Super Secret Content</p>
+<div 
+  *ngFor="let entry of clickArray"
+  [ngStyle]="{backgroundColor: entry > 5 ? 'blue' : 'white'}"
+  [ngClass]="{test: entry > 5}"> 
+  {{ entry }} 
+</div>
