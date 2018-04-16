@@ -1,6 +1,8 @@
 <h3>{{ getServerName() }} with ID {{ serverId }} is {{ serverStatus}} </h3>
 
 <div class="container">
+    <button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+    <p [innerText]="allowNewServer"></p>
     <div class="row">
         <div class="col-xs-6">
             <app-window-alert></app-window-alert>     
