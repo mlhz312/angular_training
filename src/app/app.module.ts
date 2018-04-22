@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { WindowAlertComponent } from './window-alert/window-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { ServersComponent } from './servers/servers.component';
+import { Practice3Component } from './practice3/practice3.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     AppComponent,
     ServerComponent,
     WindowAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    ServersComponent,
+    Practice3Component
   ],
   imports: [
     BrowserModule,
